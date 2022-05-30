@@ -1,12 +1,19 @@
 import { StatusBar } from 'expo-status-bar';
+import { Provider } from 'react-redux';
 import { StyleSheet, Text, View } from 'react-native';
+
+
+//set up redux
+
 
 export default function App() {
   return (
+    <Provider store={store}>
     <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
+      <Text>Uber clone</Text>
       <StatusBar style="auto" />
     </View>
+    </Provider>
   );
 }
 
